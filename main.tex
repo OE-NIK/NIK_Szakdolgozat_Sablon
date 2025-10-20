@@ -1,0 +1,47 @@
+% ===== SETTINGS =====
+
+\documentclass[a4paper, 12pt]{report}
+
+% 1) Project metadata (hyperref/pdfusetitle reads these)
+\input{meta/variables}
+
+% 2) User-managed packages
+\input{user/packages}
+
+% 3) Glossaries: initialize and load data (project-owned)
+\makeglossaries
+\input{abbreviations}
+
+% 4) User settings (project-owned tweaks; no packages here)
+\input{user/settings}
+
+% 5) Bibliography database (project-owned)
+\addbibresource{references.bib}
+
+% ===== DOCUMENT =====
+
+\begin{document}
+
+% ===== FRONT MATTER =====
+\input{front_matter/preliminary_pages}
+\input{front_matter/abstract}
+\tableofcontents
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\cleardoublepage
+\input{front_matter/intro}
+
+% ===== MAIN CONTENT =====
+\input{chapters/content}
+
+% ===== BIBLIOGRAPHY =====
+\sloppy
+\raggedright
+\newpage
+\phantomsection
+\printbibliography[heading=bibintoc,title={Irodalomjegyzék}]
+
+% ===== LISTS =====
+\input{template/lists}
+
+\end{document}

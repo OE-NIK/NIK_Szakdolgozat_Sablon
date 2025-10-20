@@ -1,0 +1,21 @@
+% ---- User settings, macros, and local tweaks (NO packages here) ----
+
+% Figure search path (project-specific)
+\graphicspath{{figures/}}
+
+% Hungarian captions tuning
+\addto\captionsmagyar{%
+  \renewcommand{\listfigurename}{Ábrajegyzék}%
+}
+
+% Paragraph indentation
+\setlength{\parindent}{0pt}
+
+% Small helper macro
+\newcommand{\skipline}{\\[1em]}
+
+% Glossaries formatting (optional)
+\renewcommand*{\glossaryentrynumbers}[1]{\dotfill#1}
+\renewcommand{\glsentryfmt}{%
+  \textbf{\glslabel}\hspace{1em}%
+  \glsdesc\dotfill\glspage}
