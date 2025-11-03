@@ -1,0 +1,49 @@
+\section{Prior Work}
+
+Here is an example of a more complex image embedding, where you can refer to the entire figure \ref{fig:parallelismtypes} or even to one of its subfigures \ref{fig:modelparallel}.
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Dataparallel.png}
+		\caption{Data parallelism}
+		\label{fig:dataparallel}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Modelparallel.png}
+		\caption{Model parallelism}
+		\label{fig:modelparallel}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Layerparallel.png}
+		\caption{Pipeline parallelism}
+		\label{fig:pipelineparallel}
+	\end{subfigure}
+	\caption{Types of parallelism}
+	\label{fig:parallelismtypes}
+\end{figure}
+
+
+
+There is also an example of a table in \ref{tab:phi_def}.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|l|}
+\hline
+\textbf{Type}                & \textbf{Definition of \(\phi\)} \\ \hline
+Simple graph                 & \(\phi : E \to \mathcal{P}_2(V)\), where \(\mathcal{P}_2(V)\) is the set of 2-element subsets of \(V\) \\ \hline
+Directed graph               & \(\phi : E \to V \times V\), where \((u, v)\) is an ordered pair \\ \hline
+Multigraph                   & \(\phi : E \to \mathcal{P}_2(V) \times \mathbb{N}\), where \(\mathbb{N}\) is the index set of edges \\ \hline
+Hypergraph                   & \(\phi : E \to \mathcal{P}(V)\), where \(\mathcal{P}(V)\) is the set of all subsets of \(V\) \\ \hline
+\end{tabular}
+\caption{Different definitions of the mapping \(\phi\) for various graph types.}
+\label{tab:phi_def}
+\end{table}
+
+\lipsum[2-5]
