@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 ## OE-NIK Szakdolgozat / Diplomamunka LaTeX template
@@ -15,3 +16,6 @@ A `variable.tex` fájlban található értékek kitöltése a végső PDF fájl 
 ### abbreviations
 
 Ott lehet megadni rövidítéseket, amiket automatikusan jegyzékbe gyűjt.
+=======
+# NIK_Szakdolgozat_Sablon
+>>>>>>> origin/main
